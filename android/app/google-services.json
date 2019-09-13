@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "886993795008",
+    "firebase_url": "https://polls-223422.firebaseio.com",
+    "project_id": "polls-223422",
+    "storage_bucket": "polls-223422.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886993795008:android:d682d7e2aee1bf4a",
+        "android_client_info": {
+          "package_name": "com.stats.stats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "886993795008-ifpltmg336id6jljppnss7atlpb4tomn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stats.stats",
+            "certificate_hash": "3a8995d50534af0a53e1b9e027b4de6f349bf8fd"
+          }
+        },
+        {
+          "client_id": "886993795008-3b5plubdsamm8pnvr2vrtm1juouvgte7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stats.stats",
+            "certificate_hash": "baef0f3d2f479fda98db9589c90694d00ae66d2d"
+          }
+        },
+        {
+          "client_id": "886993795008-n28q135kl95gofium1l5ob7pvvcjgth1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBohr9eY2DE6ZGR_IbPnObrmpEtbufS9Mk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "886993795008-n28q135kl95gofium1l5ob7pvvcjgth1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "886993795008-q9ba4qctbulgvtriupa8th37esvefh4q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.stats.stats"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
