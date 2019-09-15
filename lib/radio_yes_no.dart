@@ -128,7 +128,7 @@ class CustomRadioState extends State<LikeDisLike> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Container(
-                    color: Colors.white,
+                    color: Colors.transparent,
                     child: StreamBuilder<DocumentSnapshot>(
                       stream: Firestore.instance
                           .collection('votes')
@@ -184,7 +184,7 @@ class CustomRadioState extends State<LikeDisLike> {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: <Widget>[
                     Text(
-                      '🗳 total polls: ️',
+                      '🗳  polls: ️',
                       style: TextStyle(color: Colors.black, fontSize: 11),
                     ),
                     Container(
@@ -281,7 +281,7 @@ class RadioItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Container(
-      margin: new EdgeInsets.all(10.0),
+//      margin: new EdgeInsets.all(10.0),
       child: new Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[

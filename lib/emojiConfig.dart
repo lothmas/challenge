@@ -36,7 +36,7 @@ final List<EmojiModel> reactions = <EmojiModel>[
       activeSrc: 'assets/surprised_big.png'),
 ].toList();
 
-const EmojiSize = 28.0;
+const EmojiSize = 22.0;
 const EmojiRadius = EmojiSize / 2.0;
 const ActiveEmojiSize = EmojiSize * 1.3;
 const ActiveEmojiRadius = ActiveEmojiSize / 2.0;
@@ -237,7 +237,7 @@ class EmojiFeedbackState extends State<EmojiFeedback>
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Container(
-                    color: Colors.white,
+                    color: Colors.transparent,
                     child: StreamBuilder<DocumentSnapshot>(
                       stream: Firestore.instance
                           .collection('votes').document(voteID).snapshots(),

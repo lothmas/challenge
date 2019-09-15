@@ -41,7 +41,7 @@ class _MyDrawerState extends State<MyDrawer> with TickerProviderStateMixin {
       sizeFactor: _animation,
       axisAlignment: -1.0,
       child: Container(
-        height: MediaQuery.of(context).size.height * 0.72,
+        height: MediaQuery.of(context).size.height * 0.80,
         margin: EdgeInsets.only(top: 12.0),
         alignment: Alignment.topCenter,
         decoration: BoxDecoration(

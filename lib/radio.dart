@@ -22,11 +22,7 @@ class _CurrencyState extends State<YesNoMaybe> {
   String voteID, memberID;
   int castedVoteNumber;
 
-  static const EURO_MUL = 0.86;
-  static const POUND_MUL = 0.75;
-  static const YEN_MUL = 110.63;
-  double _result = 0.0;
-  String _textResult = '';
+
 
   _CurrencyState(String voteID, String memberID) {
     this.voteID = voteID;
@@ -77,7 +73,7 @@ class _CurrencyState extends State<YesNoMaybe> {
 //                margin: const EdgeInsets.all(3.0),
                 alignment: Alignment.center,
                 child: new Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
 //                    new Padding(padding: new EdgeInsets.all(5.0)),
                     new Row(
@@ -234,15 +230,6 @@ class _CurrencyState extends State<YesNoMaybe> {
                             }
                           },
                         ))
-
-
-
-
-
-
-
-
-
                   ],
                 ),
               )

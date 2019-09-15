@@ -8,7 +8,7 @@ import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_storage/firebase_storage.dart';
-import 'package:flutter_twitter/flutter_twitter.dart';
+//import 'package:flutter_twitter_login/flutter_twitter_login.dart';
 import 'package:flutter_facebook_login/flutter_facebook_login.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 const assetsPath = "assets/developers/luke_pighetti/book_reader";
@@ -164,10 +164,10 @@ class __ButtonState extends State<_Button> with TickerProviderStateMixin {
     );
   }
 
-  var twitterLogin = new TwitterLogin(
-    consumerKey: 'k8n2hJMd1rYj8Xt0Sq1JdgMZa',
-    consumerSecret: '5kHYsJ6XoHmpG37kA4pg1HY0xGHnpaeX6NjqvL1Rt3TV46uTW3',
-  );
+//  var twitterLogin = new TwitterLogin(
+//    consumerKey: 'k8n2hJMd1rYj8Xt0Sq1JdgMZa',
+//    consumerSecret: '5kHYsJ6XoHmpG37kA4pg1HY0xGHnpaeX6NjqvL1Rt3TV46uTW3',
+//  );
 
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final GoogleSignIn _googleSignIn = GoogleSignIn();
@@ -203,25 +203,25 @@ class __ButtonState extends State<_Button> with TickerProviderStateMixin {
                       Buttons.Twitter,
                       mini: false,
                       onPressed: () async {
-                        final TwitterLoginResult result = await twitterLogin
-                            .authorize();
-
-                        switch (result.status) {
-                          case TwitterLoginStatus.loggedIn:
-                            final AuthCredential credential = TwitterAuthProvider
-                                .getCredential(
-                                authToken: result.session.token,
-                                authTokenSecret: result.session.secret);
-                            final FirebaseUser user =
-                                (await _auth.signInWithCredential(credential))
-                                    .user;
-                            bloc.onboarded(true);
-                            break;
-                          case TwitterLoginStatus.cancelledByUser:
-                            break;
-                          case TwitterLoginStatus.error:
-                            break;
-                        }
+//                        final TwitterLoginResult result = await twitterLogin
+//                            .authorize();
+//
+//                        switch (result.status) {
+//                          case TwitterLoginStatus.loggedIn:
+//                            final AuthCredential credential = TwitterAuthProvider
+//                                .getCredential(
+//                                authToken: result.session.token,
+//                                authTokenSecret: result.session.secret);
+//                            final FirebaseUser user =
+//                                (await _auth.signInWithCredential(credential))
+//                                    .user;
+//                            bloc.onboarded(true);
+//                            break;
+//                          case TwitterLoginStatus.cancelledByUser:
+//                            break;
+//                          case TwitterLoginStatus.error:
+//                            break;
+//                        }
                       },
                     ),
                     SignInButton(

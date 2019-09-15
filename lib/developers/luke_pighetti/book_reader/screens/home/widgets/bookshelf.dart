@@ -69,7 +69,8 @@ class _BookshelfState extends State<Bookshelf> with TickerProviderStateMixin {
           alignment: Alignment.bottomCenter,
           child: Container(
             padding: EdgeInsets.only(top: 36.0, bottom: 28.0),
-            height: MediaQuery.of(context).size.height * .72,
+            //Card Sizes where main`display is set
+            height: MediaQuery.of(context).size.height * .78,
             child: StreamBuilder(
               stream: BlocProvider.of(context).trendings,
               initialData: <TrendingList>[],
@@ -121,7 +122,7 @@ class MyBook extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 24.0, horizontal: 10.0),
+      margin: EdgeInsets.symmetric(vertical: 24.0, horizontal: 4.0),
       decoration: BoxDecoration(
         color: Colors.grey[100],
         borderRadius: BorderRadius.circular(12.0),
@@ -146,7 +147,7 @@ class MyBook extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
               MeetNetworkImage(
-              height: MediaQuery.of(context).size.height /2.9,
+              height: MediaQuery.of(context).size.height /2.4,
               width: MediaQuery.of(context).size.width,
               fit: BoxFit.fill,
 //              color: Colors.blue,
@@ -161,11 +162,11 @@ class MyBook extends StatelessWidget {
               ),
             ),
 
-            SizedBox(height: 22.0 * scale),
+//            SizedBox(height: 1.0 ),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 12.0),
+//                  padding: EdgeInsets.symmetric(horizontal: 12.0),
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+//                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       voterFactory(trend.voteBy)
 //                      Text(
@@ -232,13 +233,13 @@ class MyBook extends StatelessWidget {
     if (voteBy == 7) {
       return
         Container(
-            height: 88,
+            height: 60,
             child: new YesNoMaybe(trend.id, uuid));
     }
     if (voteBy == 8) {
       return
         Container(
-            height: 95,
+            height: 85,
             child: new LikeDisLike(trend.id, uuid));
     }
     else{

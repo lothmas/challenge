@@ -146,9 +146,8 @@ class CustomRadioState extends State<CustomRadio> {
           //  crossAxisAlignment: CrossAxisAlignment.b,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-
             Container(
-                color: Colors.white,
+                color: Colors.transparent,
                 child: StreamBuilder<DocumentSnapshot>(
                   stream: Firestore.instance
                       .collection('votes').document(voteID).snapshots(),
